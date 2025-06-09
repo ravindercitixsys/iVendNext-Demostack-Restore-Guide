@@ -39,6 +39,7 @@ As this is laready installed, so no need to install it.
     bench --site dev.ravinder.localhost install-app ivend_loyality
  
 ### 6. iVendNext POS: V1.0.0 (staging)
+As this is laready installed, so no need to install it.
 
     NA
  
@@ -58,6 +59,7 @@ As this is laready installed, so no need to install it.
     bench --site dev.ravinder.localhost install-app moneris_payment_processor
  
 ### 10. Payments: V1.0.0 (version-15)
+As this is laready installed, so no need to install it.
 
     NA
  
