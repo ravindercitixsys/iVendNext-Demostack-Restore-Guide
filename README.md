@@ -1,5 +1,12 @@
 # iVendNext-Demostack-Restore-Guide
 iVendNext Demostack Restore Guide
+## Step 1: Download the DB backup file from frappe site (https://demostack.ivendnext.com/app/backups)
+
+Download the Database file from the site the DB which need to restore.
+This can be download fromdownload backup setion or visit https://{SiteName}/app/backups
+    
+    ![image](https://github.com/user-attachments/assets/049f8bb7-b1af-49ef-8c34-81c3be559fd5)
+    
 ## Step 1: How to restore a MariaDB backup
 
 If you’re using bench (the Frappe CLI tool), you can restore the database using:
