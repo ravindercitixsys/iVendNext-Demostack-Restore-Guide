@@ -10,15 +10,16 @@ You can download it from the Backups section on your site:
    ![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
 
 ## Step 2: Copy the Backup File to Bench Location
-Since you're running bench inside a Linux Docker container, you need to copy the backup file to your container workspace:
+Since you're running bench inside a Linux Docker container, you need to copy the backup file to your container workspace.
 
-Path to copy: /workspace/development/ivend-bench
+Target Path: /workspace/development/ivend-bench
 
 You can copy the file:
 
-directly into the Docker container
+Directly into the Docker container
 OR
-to a volume-mounted folder like /workspace/development/ivend-bench
+
+To a volume-mounted folder like /workspace/development/ivend-bench
 
    ![image](https://github.com/user-attachments/assets/0740683d-8684-4f7a-98e1-c91abf0bf73c)
 
@@ -42,14 +43,12 @@ Below is the list of apps used on the Demostack and their installation instructi
     bench --site dev.ravinder.localhost install-app elavon_payment_processor
  
 ### 2. iVendNext: V1.0.0 (Release-1.0)
-As this is laready installed, so no need to install it.
 
-    NA
+Already installed — No action required
  
 ### 3. iVend Framework: V1.0.0 (Release-1.0)
-As this is laready installed, so no need to install it.
 
-    NA
+Already installed — No action required
  
 ### 4. HW Integration: V1.0.0 (develop)
 
@@ -62,9 +61,8 @@ As this is laready installed, so no need to install it.
     bench --site dev.ravinder.localhost install-app ivend_loyality
  
 ### 6. iVendNext POS: V1.0.0 (staging)
-As this is laready installed, so no need to install it.
 
-    NA
+ Already installed — No action required
  
 ### 7. iVendNext Reports: V1.0.0 (main)
 
@@ -82,9 +80,8 @@ As this is laready installed, so no need to install it.
     bench --site dev.ravinder.localhost install-app moneris_payment_processor
  
 ### 10. Payments: V1.0.0 (version-15)
-As this is laready installed, so no need to install it.
 
-    NA
+Already installed — No action required
  
 ### 11. Print Designer: V1.0.0 (main)
 
@@ -101,7 +98,18 @@ As this is laready installed, so no need to install it.
     bench get-app https://github.com/ivendnext/iVendNextWebShop.git --branch develop
     bench --site dev.ravinder.localhost install-app webshop
 
-## Step 5: Change encryption_key as per Downloaded or backuped databse.
-Change the in site_config.json file of frappe site. This will find under your website path.
+## Step 5: Update encryption_key in site_config.json
+After restoring the database, update the encryption_key to match the key used in the backup.
+
+### 1. Open the site_config.json file located at:
+
+   /sites/[sitename]/site_config.json
+   
+### 2. Replace the encryption_key value with the one from your backup or configuration source.
 
 ![image](https://github.com/user-attachments/assets/1d77a8b0-5488-4ebf-9e8b-06f1e357aa8f)
+
+## Step 6: Final Step: Migrate the Site
+Run the migration command to ensure the database schema and patches are up-to-date:
+
+   bench --site dev.ravinder.localhost migrate
