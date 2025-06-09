@@ -100,3 +100,8 @@ As this is laready installed, so no need to install it.
 
     bench get-app https://github.com/ivendnext/iVendNextWebShop.git --branch develop
     bench --site dev.ravinder.localhost install-app webshop
+
+## Step 5: Change encryption_key as per Downloaded or backuped databse.
+Change the in site_config.json file of frappe site. This will find under your website path.
+
+![image](https://github.com/user-attachments/assets/1d77a8b0-5488-4ebf-9e8b-06f1e357aa8f)
