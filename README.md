@@ -13,18 +13,18 @@ Example
 ## Step 2: Restore all Apps installed on Demostack DB
 
 
-### Elavon Payment Processor: V1.0.0 (main)
+### 1. Elavon Payment Processor: V1.0.0 (main)
 
-  bench get-app https://github.com/ivendnext/elavon_payment_processor.git --branch main
-  bench --site ivenddemostack.localhost install-app elavon_payment_processor
+   bench get-app https://github.com/ivendnext/elavon_payment_processor.git --branch main
+   bench --site ivenddemostack.localhost install-app elavon_payment_processor
  
-### iVendNext: V1.0.0 (Release-1.0)
+### 2. iVendNext: V1.0.0 (Release-1.0)
 
- NA
+   NA
  
-### iVend Framework: V1.0.0 (Release-1.0)
+### 3. iVend Framework: V1.0.0 (Release-1.0)
 
- NA
+   NA
  
 HW Integration: V1.0.0 (develop)
  bench get-app https://github.com/ivendnext/hw_integration.git --branch develop
