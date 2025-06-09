@@ -16,41 +16,62 @@ Example
 ### 1. Elavon Payment Processor: V1.0.0 (main)
 
     bench get-app https://github.com/ivendnext/elavon_payment_processor.git --branch main
-    bench --site ivenddemostack.localhost install-app elavon_payment_processor
+    bench --site dev.ravinder.localhost install-app elavon_payment_processor
  
 ### 2. iVendNext: V1.0.0 (Release-1.0)
+As this is laready installed, so no need to install it.
 
-   NA
+    NA
  
 ### 3. iVend Framework: V1.0.0 (Release-1.0)
+As this is laready installed, so no need to install it.
 
-   NA
+    NA
  
-HW Integration: V1.0.0 (develop)
- bench get-app https://github.com/ivendnext/hw_integration.git --branch develop
- bench --site ivenddemostack.localhost install-app hw_integration
-iVend Loyality: V1.0.0 (main)
- bench get-app https://github.com/ivendnext/ivend_loyality.git --branch main
- bench --site ivenddemostack.localhost install-app ivend_loyality
-iVendNext POS: V1.0.0 (staging)
- NA
-iVendNext Reports: V1.0.0 (main)
- bench get-app https://github.com/ivendnext/iVendNextDashboards.git --branch main
- bench --site ivenddemostack.localhost install-app ivendnext_reports
-Ivendnext Theme: V1.0.0 (Release-1.0)
- bench get-app https://github.com/ivendnext/iVendNext-Theme.git --branch Release-1.0
- bench --site ivenddemostack.localhost install-app iVendNext_Theme
-Moneris Payment Processor: V1.0.0 (main)
- bench get-app https://github.com/ivendnext/moneris_payment_processor.git --branch main
- bench --site ivenddemostack.localhost install-app moneris_payment_processor
-Payments: V1.0.0 (version-15)
- NA
-Print Designer: V1.0.0 (main)
- bench get-app https://github.com/frappe/print_designer.git --branch main
- bench --site ivenddemostack.localhost install-app print_designer
-Secugen: V1.0.0 (develop)
- bench get-app https://github.com/ivendnext/Secugen.git --branch develop
- bench --site ivenddemostack.localhost install-app secugen
-Webshop: V1.0.0 (dev-15)
- bench get-app https://github.com/ivendnext/iVendNextWebShop.git --branch develop
- bench --site ivenddemostack.localhost install-app webshop
+### 4. HW Integration: V1.0.0 (develop)
+
+    bench get-app https://github.com/ivendnext/hw_integration.git --branch develop
+    bench --site dev.ravinder.localhost install-app hw_integration
+ 
+### 5. iVend Loyality: V1.0.0 (main)
+
+    bench get-app https://github.com/ivendnext/ivend_loyality.git --branch main
+    bench --site dev.ravinder.localhost install-app ivend_loyality
+ 
+### 6. iVendNext POS: V1.0.0 (staging)
+
+    NA
+ 
+### 7. iVendNext Reports: V1.0.0 (main)
+
+    bench get-app https://github.com/ivendnext/iVendNextDashboards.git --branch main
+    bench --site dev.ravinder.localhost install-app ivendnext_reports
+ 
+### 8. Ivendnext Theme: V1.0.0 (Release-1.0)
+
+    bench get-app https://github.com/ivendnext/iVendNext-Theme.git --branch Release-1.0
+    bench --site dev.ravinder.localhost install-app iVendNext_Theme
+ 
+### 9. Moneris Payment Processor: V1.0.0 (main)
+
+    bench get-app https://github.com/ivendnext/moneris_payment_processor.git --branch main
+    bench --site dev.ravinder.localhost install-app moneris_payment_processor
+ 
+### 10. Payments: V1.0.0 (version-15)
+
+    NA
+ 
+### 11. Print Designer: V1.0.0 (main)
+
+    bench get-app https://github.com/frappe/print_designer.git --branch main
+    bench --site dev.ravinder.localhost install-app print_designer
+ 
+### 12. Secugen: V1.0.0 (develop)
+
+    bench get-app https://github.com/ivendnext/Secugen.git --branch develop
+    bench --site dev.ravinder.localhost install-app secugen
+ 
+### 13. Webshop: V1.0.0 (dev-15)
+
+    bench get-app https://github.com/ivendnext/iVendNextWebShop.git --branch develop
+    bench --site dev.ravinder.localhost install-app webshop
