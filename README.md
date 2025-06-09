@@ -1,13 +1,20 @@
 # iVendNext-Demostack-Restore-Guide
 iVendNext Demostack Restore Guide
-## Step 1: Download the DB backup file from frappe site (https://demostack.ivendnext.com/app/backups)
+## Step 1: Download the DB backup file from frappe site.
 
 Download the Database file from the site the DB which need to restore.
 This can be download fromdownload backup setion or visit https://{SiteName}/app/backups
     
-    ![image](https://github.com/user-attachments/assets/049f8bb7-b1af-49ef-8c34-81c3be559fd5)
-    
-## Step 1: How to restore a MariaDB backup
+   ![image](https://github.com/user-attachments/assets/ef867680-8de6-4414-a8b1-9e6f600abd82)
+
+## Step 2: Copy the downloaded file into bench location.
+You are running bench inside the Linux Docker container. So you need to copy the downloaded DB backup to your bench.
+Copy the file into the container or into /workspace/development/ivend-bench
+
+   ![image](https://github.com/user-attachments/assets/d644f811-04a6-4cb4-bced-b09204978a66)
+
+
+## Step 3: How to restore a MariaDB backup
 
 If you’re using bench (the Frappe CLI tool), you can restore the database using:
     
@@ -17,7 +24,7 @@ Example
 
     bench --dev.ravinder.localhost --force restore /backups/20250609_123456-mysite_local-database.sql
 
-## Step 2: Restore all Apps installed on Demostack DB
+## Step 4: Restore all Apps installed on Demostack DB
 
 
 ### 1. Elavon Payment Processor: V1.0.0 (main)
