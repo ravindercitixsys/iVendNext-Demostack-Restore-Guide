@@ -7,27 +7,34 @@ You can download it from the Backups section on your site:
 
 👉 https://{SiteName}/app/backups
 
-📷 Example screenshot here ![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
+![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
 
-## Step 2: Copy the downloaded file into bench location.
-You are running bench inside the Linux Docker container. So you need to copy the downloaded DB backup to your bench.
-Copy the file into the container or into /workspace/development/ivend-bench
+## Step 2: Copy the Backup File to Bench Location
+Since you're running bench inside a Linux Docker container, you need to copy the backup file to your container workspace:
 
-   ![image](https://github.com/user-attachments/assets/d644f811-04a6-4cb4-bced-b09204978a66)
+Path to copy: /workspace/development/ivend-bench
+
+You can copy the file:
+
+directly into the Docker container
+OR
+to a volume-mounted folder like /workspace/development/ivend-bench
+
+   ![image](https://github.com/user-attachments/assets/0740683d-8684-4f7a-98e1-c91abf0bf73c)
 
 
-## Step 3: How to restore a MariaDB backup
+## Step 3: Restore the MariaDB Backup
 
-If you’re using bench (the Frappe CLI tool), you can restore the database using:
+You can restore the DB backup using the bench CLI tool:
     
-    bench --site [sitename] restore path/to/backup.sql or path/to/backup.sql.gz
+    bench --site [sitename] restore path/to/backup.sql(.gz)
     
 Example
 
     bench --site dev.ravinder.localhost restore demostack_ivendnext_com-database.sql.gz
 
-## Step 4: Restore all Apps installed on Demostack DB
-
+## Step 4: Restore/Install Required Apps on Demostack DB
+Below is the list of apps used on the Demostack and their installation instructions:
 
 ### 1. Elavon Payment Processor: V1.0.0 (main)
 
