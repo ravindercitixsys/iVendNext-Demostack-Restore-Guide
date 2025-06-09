@@ -1,11 +1,13 @@
-# iVendNext-Demostack-Restore-Guide
+# iVendNext Demostack Restore Guide
 iVendNext Demostack Restore Guide
-## Step 1: Download the DB backup file from frappe site.
+## Step 1: Download the Database Backup File
+Download the required Database backup file from the iVendNext Frappe site.
 
-Download the Database file from the site the DB which need to restore.
-This can be download fromdownload backup setion or visit https://{SiteName}/app/backups
-    
-   ![image](https://github.com/user-attachments/assets/ef867680-8de6-4414-a8b1-9e6f600abd82)
+You can download it from the Backups section on your site:
+
+👉 https://{SiteName}/app/backups
+
+📷 Example screenshot here ![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
 
 ## Step 2: Copy the downloaded file into bench location.
 You are running bench inside the Linux Docker container. So you need to copy the downloaded DB backup to your bench.
