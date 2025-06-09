@@ -113,3 +113,8 @@ After restoring the database, update the encryption_key to match the key used in
 Run the migration command to ensure the database schema and patches are up-to-date:
 
     bench --site dev.ravinder.localhost migrate
+
+Now Start Frappe bench
+    bench start
+    
+You can now login with user Administrator and the password you choose when creating the site. Your website will now be accessible at location dev.ravinder.localhost:8000/app
