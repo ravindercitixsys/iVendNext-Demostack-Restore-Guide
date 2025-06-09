@@ -14,12 +14,18 @@ Example
 
 
 Elavon Payment Processor: V1.0.0 (main)
+
  bench get-app https://github.com/ivendnext/elavon_payment_processor.git --branch main
  bench --site ivenddemostack.localhost install-app elavon_payment_processor
+ 
 iVendNext: V1.0.0 (Release-1.0)
+
  NA
+ 
 iVend Framework: V1.0.0 (Release-1.0)
+
  NA
+ 
 HW Integration: V1.0.0 (develop)
  bench get-app https://github.com/ivendnext/hw_integration.git --branch develop
  bench --site ivenddemostack.localhost install-app hw_integration
