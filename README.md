@@ -109,12 +109,14 @@ After restoring the database, update the encryption_key to match the key used in
 
 ![image](https://github.com/user-attachments/assets/1d77a8b0-5488-4ebf-9e8b-06f1e357aa8f)
 
-## Step 6: Final Step: Migrate the Site
-Run the migration command to ensure the database schema and patches are up-to-date:
+## Step 6: Final Step — Migrate the Site and Start the Bench
+### 6.1 Run Database Migration
+This step ensures that the database schema is updated and all patches are applied:
 
     bench --site dev.ravinder.localhost migrate
 
-Now Start Frappe bench
+### 6.2 Start the Frappe Bench
+Now start your bench server:
     
     bench start
     
