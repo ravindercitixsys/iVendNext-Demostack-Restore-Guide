@@ -7,7 +7,7 @@ You can download it from the Backups section on your site:
 
 👉 https://{SiteName}/app/backups
 
-![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
+   ![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
 
 ## Step 2: Copy the Backup File to Bench Location
 Since you're running bench inside a Linux Docker container, you need to copy the backup file to your container workspace:
