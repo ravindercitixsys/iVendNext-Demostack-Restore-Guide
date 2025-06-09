@@ -9,7 +9,7 @@ You can download it from the Backups section on your site:
 
    ![image](https://github.com/user-attachments/assets/aa1994ac-7d64-484f-b278-489f549d82c2)
 
-## Step 2: Copy the Backup File to Bench Location
+## Step 2: Copy the Backup File to Bench Location (Optional, If running Frappe in Linux Docker Container in Window PC)
 Since you're running bench inside a Linux Docker container, you need to copy the backup file to your container workspace.
 
 Target Path: /workspace/development/ivend-bench
