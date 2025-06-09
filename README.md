@@ -103,7 +103,7 @@ After restoring the database, update the encryption_key to match the key used in
 
 ### 1. Open the site_config.json file located at:
 
-   /sites/[sitename]/site_config.json
+    /sites/[sitename]/site_config.json
    
 ### 2. Replace the encryption_key value with the one from your backup or configuration source.
 
@@ -112,4 +112,4 @@ After restoring the database, update the encryption_key to match the key used in
 ## Step 6: Final Step: Migrate the Site
 Run the migration command to ensure the database schema and patches are up-to-date:
 
-   bench --site dev.ravinder.localhost migrate
+    bench --site dev.ravinder.localhost migrate
