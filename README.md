@@ -18,11 +18,11 @@ Copy the file into the container or into /workspace/development/ivend-bench
 
 If you’re using bench (the Frappe CLI tool), you can restore the database using:
     
-    bench --site [sitename] --force restore path/to/backup.sql
+    bench --site [sitename] restore path/to/backup.sql or path/to/backup.sql.gz
     
 Example
 
-    bench --dev.ravinder.localhost --force restore /backups/20250609_123456-mysite_local-database.sql
+    bench --site dev.ravinder.localhost restore demostack_ivendnext_com-database.sql.gz
 
 ## Step 4: Restore all Apps installed on Demostack DB
 
