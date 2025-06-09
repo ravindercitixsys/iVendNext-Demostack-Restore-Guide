@@ -1,6 +1,6 @@
 # iVendNext-Demostack-Restore-Guide
 iVendNext Demostack Restore Guide
-### Step 1: How to restore a MariaDB backup
+## Step 1: How to restore a MariaDB backup
 
 If you’re using bench (the Frappe CLI tool), you can restore the database using:
     
@@ -10,7 +10,7 @@ Example
 
     bench --dev.ravinder.localhost --force restore /backups/20250609_123456-mysite_local-database.sql
 
-### Step 2: Restore all Apps installed on Demostack DB
+## Step 2: Restore all Apps installed on Demostack DB
 
 
 Elavon Payment Processor: V1.0.0 (main)
